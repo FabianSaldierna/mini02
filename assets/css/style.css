@@ -1,0 +1,35 @@
+.h1{
+        outline: 1px solid #159599;
+        text-align: center;
+}
+
+.intro-paragraph{
+    outline: 1px solid #159599;
+    padding: 10px;
+    display:flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.card-holder{
+    display: grid;
+    gap: 2rem;
+    padding: 1rem;
+    width: min(90%, 75rem);
+    grid-template-columns: 33% 33% 33%;
+    outline: 2px solid cyan;
+}
+
+.card{
+    outline: 1px solid red;
+}
+
+.code {
+   display:flex;
+    outline: 1px solid forestgreen;
+}
+
+.footer {
+    outline: 1px solid #159599;
+    text-align: center;
+}

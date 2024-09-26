@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mini Project 02</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <h1 class="h1">CSS Snippet Cheatsheet</h1>
+        <p class="intro-paragraph">
+            Ever have trouble recalling the exact syntax for your favorite CSS code? Give it a permanent home and add it to this page! Select any snippet below and it'll automatically select all of the code for you to copy.
+        </p>
+    </header>
+
+    <!-- Body -->
+    <main>
+        <!-- Product Cards -->
+        <div class="card-holder">
+            <section class="card">
+                <header> <h2>Flexbox Row</h2></header>
+                    <p>Use this three properties to create a Flexbox row layout.</p>
+                <div class="code">
+                    <p>.row {
+                        <br>  display: flex;
+                        <br>  flex-direction: row;
+                        <br>  flex-wrap: wrap:
+                        <br>}
+                    </p>
+                </div>
+            </section>
+            
+            <section class="card">
+                <header><h2>Flexbox Column</h2></header>
+                <p>Use this to create a Flexbox column layout.</p>
+                <div class="code">
+                    <p>.column {
+                        <br>display: flex;
+                        <br>flex-direction: column;
+                        <br>}
+                    </p>
+                </div>
+            </section>
+
+            <section class="card">
+                <header><h2>CSS Grid Layout</h2></header>
+                <p>Build a 12-column layout using CSS Grid</p>
+                <div class="code">
+                    <p>.grid {
+                        <br>  display: grid;
+                        <br>  width: 100%;
+                        <br>  grid-template-columns:
+                        <br>  repeat(12, 1fr);
+                        <br>}
+                    </p>
+                </div>
+            </section>
+
+            <section class="card">
+                <header><h2>Linear Gradients</h2></header>
+                <p>This will create a background linear gradient form top to bottom.</p>
+                <div class="code">
+                    <p>.linear-gradient-background {
+                        <br> background-image: linear-gradient(
+                        <br> rgba(232, 102, 236, 0.3) 0%;
+                        <br> rgba(232, 102, 236, 0.6) 100%;
+                        <br> );
+                        <br>}
+                    </p>
+                </div>
+            </section>
+
+            <section class="card">
+                <header><h2>Box Transition Glow</h2></header>
+                <p>Use this transition and box shadows to glow on hover.</p>
+                <div class="code">
+                    <p>.code-card .card-header {
+                        <br> border radius: 8px;
+                        <br> transition: all 0.5s ease-in-out;
+                        <br>};
+                        <br>
+                        <br>.code-card:hover, 
+                        <br>.code-card:hover .card-header {
+                        <br>  box-shadow: inset 0px 0px 8px rgba(232, 102, 236, 1), 0 0 15p
+                        <br>  rgba (232, 102, 236, 1);
+                        <br> }
+                    </p>
+                </div>
+            </section>
+
+            <section class="card">
+            <header><h2>Overlay Card with title</h2></header>
+            <p>Use positioning properties and negative margins to raise elements higher than their natural starting point.</p>
+            <div class="code">
+                <p>.card-header {
+                    <br> position-relative;
+                    <br> margin-top: -20px;
+                    <br> }
+                </p>
+            </div>
+            </section>
+
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer aria-label="greeting" class="footer">
+        Made with &#9829; and CSS
+    </footer>
+</body>
+
+</html>
