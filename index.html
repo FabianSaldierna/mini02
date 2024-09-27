@@ -23,84 +23,85 @@
         <!-- Product Cards -->
         <div class="card-holder">
             <section class="card">
-                <header> <h2>Flexbox Row</h2></header>
+                <header class="h2-titles"> <h2>Flexbox Row</h2></header>
                     <p>Use this three properties to create a Flexbox row layout.</p>
                 <div class="code">
-                    <p>.row {
-                        <br>  display: flex;
-                        <br>  flex-direction: row;
-                        <br>  flex-wrap: wrap:
-                        <br>}
-                    </p>
+                    <pre>.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap:
+}
+                    </pre>
                 </div>
             </section>
             
             <section class="card">
-                <header><h2>Flexbox Column</h2></header>
+                <header class="h2-titles"><h2>Flexbox Column</h2></header>
                 <p>Use this to create a Flexbox column layout.</p>
                 <div class="code">
-                    <p>.column {
-                        <br>display: flex;
-                        <br>flex-direction: column;
-                        <br>}
-                    </p>
+                    <pre>.column {
+    display: flex;
+    flex-direction: column;
+}
+                    </pre>
                 </div>
             </section>
 
             <section class="card">
-                <header><h2>CSS Grid Layout</h2></header>
+                <header class="h2-titles"><h2>CSS Grid Layout</h2></header>
                 <p>Build a 12-column layout using CSS Grid</p>
                 <div class="code">
-                    <p>.grid {
-                        <br>  display: grid;
-                        <br>  width: 100%;
-                        <br>  grid-template-columns:
-                        <br>  repeat(12, 1fr);
-                        <br>}
-                    </p>
+                    <pre>.grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns:
+    repeat(12, 1fr);
+}
+                    </pre>
                 </div>
             </section>
 
             <section class="card">
-                <header><h2>Linear Gradients</h2></header>
+                <header class="h2-titles"><h2>Linear Gradients</h2></header>
                 <p>This will create a background linear gradient form top to bottom.</p>
                 <div class="code">
-                    <p>.linear-gradient-background {
-                        <br> background-image: linear-gradient(
-                        <br> rgba(232, 102, 236, 0.3) 0%;
-                        <br> rgba(232, 102, 236, 0.6) 100%;
-                        <br> );
-                        <br>}
-                    </p>
+                    <pre>.linear-gradient-background {
+    background-image: linear-gradient(
+        rgba(232, 102, 236, 0.3) 0%;
+        rgba(232, 102, 236, 0.6) 100%;
+    );
+}
+                    </pre>
                 </div>
             </section>
 
             <section class="card">
-                <header><h2>Box Transition Glow</h2></header>
+                <header class="h2-titles"><h2>Box Transition Glow</h2></header>
                 <p>Use this transition and box shadows to glow on hover.</p>
                 <div class="code">
-                    <p>.code-card .card-header {
-                        <br> border radius: 8px;
-                        <br> transition: all 0.5s ease-in-out;
-                        <br>};
-                        <br>
-                        <br>.code-card:hover, 
-                        <br>.code-card:hover .card-header {
-                        <br>  box-shadow: inset 0px 0px 8px rgba(232, 102, 236, 1), 0 0 15p
-                        <br>  rgba (232, 102, 236, 1);
-                        <br> }
-                    </p>
+                    <pre>.code-card .card-header {
+    border radius: 8px;
+    transition: all 0.5s ease-in-out;
+};
+
+.code-card:hover, 
+.code-card:hover .card-header {
+    box-shadow: inset 0px 0px 8px 
+    rgba(232, 102, 236, 1), 0 0 15px
+    rgba (232, 102, 236, 1);
+}
+                    </pre>
                 </div>
             </section>
 
             <section class="card">
-            <header><h2>Overlay Card with title</h2></header>
+            <header class="h2-titles"><h2>Overlay Card with title</h2></header>
             <p>Use positioning properties and negative margins to raise elements higher than their natural starting point.</p>
             <div class="code">
-                <p>.card-header {
-                    <br> position-relative;
-                    <br> margin-top: -20px;
-                    <br> }
+                <pre>.card-header {
+    position-relative;
+    margin-top: -20px;
+}
                 </p>
             </div>
             </section>

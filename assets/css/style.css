@@ -1,6 +1,38 @@
+/* create custom CSS variables (also called custom properties) and apply them to the root of the page, making them accessible to all other CSS */
+:root {
+    /* declare a variable with `--` syntax */
+    --dark: #13293d;
+    --light: #fff;
+    --navlink-color: #b9c6ae;
+}
+
+body{
+    background-color: #09131f;
+    color: var(--light);
+}
+
 h1{
         outline: 1px solid #159599;
         text-align: center;
+}
+
+h2{
+    color:#db269f;
+    padding: 1px;
+    margin: 1px;
+}
+
+p{
+    padding-left: 7px;
+}
+.h2-titles{
+    display:flex;
+    margin: 1rem;
+    text-align: center;
+    border-style: solid;
+    border-width: 2px;
+    padding: 3px;
+    border-radius: 10px;
 }
 
 .intro-paragraph{
@@ -10,33 +42,40 @@ h1{
     flex-wrap: wrap;
     text-align: center;
 }
-/**
-.card-holder{
-    display: grid;
-    gap: 2rem;
-    padding: 1rem;
-    width: min(90%, 75rem);
-    grid-template-columns: 33% 33% 33%;
-    outline: 2px solid cyan;
-}
-**/
+
 .card-holder {
     display: grid;
-    gap: 1rem;
     grid-template-columns: 1fr 1fr 1fr;
     outline: 2px solid rgb(53, 233, 17);
 }
 
 .card{
-    outline: 1px solid red;
+    margin: 15px;
+    outline: 3px dotted red;
 }
 
 .code {
-   display:flex;
-    outline: 1px solid forestgreen;
+    padding: 10px;
+    margin: 10px;
+    display:flex;
+    outline: 1px solid rgb(202, 43, 162);
+    border-radius: 10px;
+    background-image: linear-gradient( to bottom,
+        rgba(232, 102, 236, 0.377) 0%,
+                rgba(236, 47, 211, 0.6) 100%
+            );
 }
 
 .footer {
     outline: 1px solid #159599;
+    padding-top: 10px;
+    padding-bottom: 10px;
     text-align: center;
+}
+
+.linear-gradient-background {
+    background-image: linear-gradient(
+        rgba(232, 102, 236, 0.3),
+        rgba(232, 102, 236, 0.3)
+    );
 }
