@@ -46,12 +46,12 @@ p{
 .card-holder {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    outline: 2px solid rgb(53, 233, 17);
+    /**outline: 2px solid rgb(53, 233, 17);**/
 }
 
 .card{
     margin: 15px;
-    outline: 3px dotted red;
+    outline: 3px dotted var(--light);
 }
 
 .code {
