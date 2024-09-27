@@ -73,9 +73,12 @@ p{
     text-align: center;
 }
 
-.linear-gradient-background {
-    background-image: linear-gradient(
-        rgba(232, 102, 236, 0.3),
-        rgba(232, 102, 236, 0.3)
-    );
-}
+@media screen and (max-width: 768px) {
+
+    /* Use flex-direction to stack the navbar, sidebar, and body */
+.card-holder {
+        display: grid;
+        grid-template-columns: 1fr;
+        /**outline: 2px solid rgb(53, 233, 17);**/
+    }
+
